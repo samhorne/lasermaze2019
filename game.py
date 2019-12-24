@@ -166,7 +166,7 @@ def accept_user_input(user_command):
             main_thread.start()
     elif user_command == "exit":
         sys.exit()
-    elif user_command == "aim_blink":
+    elif user_command == "aimblink":
         try:
             if main_thread.is_alive() is True:
                 game_stopped = True
