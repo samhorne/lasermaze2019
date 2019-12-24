@@ -12,6 +12,7 @@ For this year's Halloween, some friends and I decided to go all out and build an
   - Leaderboard (Processing)
 
 ### Installation
+Tested on a Raspberry Pi 2 Model B running Raspbian GNU/Linux 10 (buster).
 1. Setup virtual environment.
 ```sh
 $ pip install virtualenv
