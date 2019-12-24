@@ -2,7 +2,7 @@
 
 For this year's Halloween, some friends and I decided to go all out and build an immersive laser maze. This quickly became the largest project I have ever undertaken, and challenged me to learn new things. Feel free to use this code for your own laser maze.
 
-### Links
+### Links (Coming Soon)
 - Overall Project Showcase
 - Hardware Setup
 - Other code written for this project
@@ -32,3 +32,23 @@ $ pip install -r requirements.txt
 $ sudo apt install mosquitto
 $ sudo systemctl enable mosquitto
 ```
+5. Edit mqtt_send.py and mqtt-recieve.py with the IP address of your new MQTT broker.
+- mqtt_recieve.py -> line 25
+- mqtt_send.py -> line 22
+```python
+client.connect("192.168.1.133", 1883, 60) #Your MQTT broker IP address here.
+```
+### Setup the Game
+1. Run mqtt_recieve.py to begin listening for the following messages on the topic "maze".
+```sh
+$ python3 mqtt_recieve.py
+```
+| MQTT Message        |    Description |
+| ------------- |-------------|
+|   "arm"       | Activates all lasers and begins detecting sensors intrusions.|
+| "aimblink"     | Blinks lasers whose sensors are intruded for aiming purposes.|
+| "thresh" | Set thresholds for each beam (the average brightness between laser on and off).|
+| "reset" | End the current game or stop aimblink.|
+|"exit"| Exit the entire game.|
+
+If you haven't setup the custom iOS app I made for this, you can easily use a tool such as [MQTTool](https://apps.apple.com/us/app/mqttool/id1085976398).
