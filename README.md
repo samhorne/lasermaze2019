@@ -2,8 +2,9 @@
 
 For this year's Halloween, some friends and I decided to go all out and build an immersive laser maze. This quickly became the largest project I have ever undertaken, and challenged me to learn new things. Feel free to use this code for your own laser maze.
 
+<img src="/2019%20Laser%20Maze%20Block%20Diagram.png" width=90% alt="Block diagram">
+
 ### Links
-- Overall Project Showcase
 - [Hardware Setup](https://samhorne.github.io/lasermaze)
 - Other code written for this project
   - iOS App (Swift)
