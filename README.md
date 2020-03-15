@@ -54,3 +54,5 @@ $ python3 mqtt_recieve.py
 |"exit"| Exit the entire game.|
 
 If you haven't setup the custom iOS app I made for this, you can easily use a tool such as [MQTTool](https://apps.apple.com/us/app/mqttool/id1085976398).
+
+Like this project? Check out my other projects [here](https://samhorne.github.io)!
